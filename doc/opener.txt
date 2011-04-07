@@ -11,9 +11,8 @@ your system in the appropriate viewer.
 COMMANDS                                              *opener-commands*
 
 :Opener [location]    Open location with the appropriate handler on your
-                      system. If location is not given, Use whatever is
-                      visually selected. Multiple locations can be selected at
-                      a time.
+                      system. If location is not given, use whatever is
+                      visually selected. Multiple lines can be selected.
 
 MAPPINGS                                              *opener-mappings*
 
