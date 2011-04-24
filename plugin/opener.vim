@@ -67,6 +67,6 @@ function! s:Opener(location)
             call s:Opener(location)
         endfor
     else
-        silent call system(g:open_location_cmd.' '.shellescape(expand(a:location)))
+        silent call system(g:opener_cmd.' '.shellescape(expand(a:location)))
     endif
 endfunction
