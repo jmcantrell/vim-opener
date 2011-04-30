@@ -52,7 +52,7 @@ endfunction
 
 function! s:GetLocations()
     let locations = []
-    for location in split(s:GetVisual(), '\n')
+    for location in split(s:GetVisual(), "\n")
         let location = s:Strip(location)
         if len(location) > 0
             call add(locations, location)
