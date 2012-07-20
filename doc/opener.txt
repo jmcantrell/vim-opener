@@ -1,35 +1,37 @@
 *opener.txt*  Open files and URLs
 
-Author:  Jeremy Cantrell <jmcantrell@gmail.com>       *opener-author*
+Author:  Jeremy Cantrell <jmcantrell@gmail.com>  *opener-author*
 License: Same terms as Vim itself (see |license|)
 
-INTRODUCTION                                          *opener* *opener.vim*
+INTRODUCTION                                     *opener* *opener.vim*
 
 The opener plugin allows you to open files, URLs, or anything recognizable to
 your system in the appropriate viewer.
 
-COMMANDS                                              *opener-commands*
+COMMANDS                                         *opener-commands*
 
-:Opener [location]    Open location with the appropriate handler on your
-                      system. If location is not given, use whatever is
-                      visually selected. Multiple lines can be selected.
+:Opener [location]                               *:Opener*
+    Open location with the appropriate handler on your system. If location is
+    not given, use whatever is visually selected. Multiple lines can be
+    selected.
 
-MAPPINGS                                              *opener-mappings*
+MAPPINGS                                         *opener-mappings*
 
-gO                    Invoke :OpenLocation with the visually selected text, or
-                      the value of <cfile>, if no text is selected.
+gO                                               *gO*
+    Invoke :OpenLocation with the visually selected text, or the value of
+    <cfile>, if no text is selected.
 
 This mapping can be overriden:
 >
     nmap <leader>o <plug>Opener
     vmap <leader>o <plug>Opener
 <
-CONFIGURATION                                         *opener-configuration*
+CONFIGURATION                                    *opener-configuration*
 
-g:opener_loaded                                       *g:opener_loaded*
+g:opener_loaded                                  *g:opener_loaded*
     If set in your |vimrc|, opener.vim is not loaded.
 
-g:opener_cmd                                          *g:opener_cmd*
+g:opener_cmd                                     *g:opener_cmd*
     If set, this will be used to open locations instead of the guessed value.
 
 vim:tw=78:et:ft=help:norl:
